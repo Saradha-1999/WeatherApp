@@ -23,47 +23,43 @@
 
 .search-bar {
     display: flex;
-    justify-content: space-between; /* Ensures even spacing */
-    align-items: center; /* Centers vertically */
-    gap: 8px; /* Space between input and icon */
-    padding: 10px; /* Padding inside the box */
-    border-radius: 40px; /* Matches the overall style */
-    background: #ebfffc; /* Background for the search bar */
-    max-width: 90%; /* Prevents overflowing on smaller screens */
-    margin: 0 auto; /* Centers the search bar in the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better appearance */
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px; /* Adjust for spacing */
 }
 
 .search-bar input {
-    flex: 1; /* Fills available space */
-    height: 40px; /* Adjust height */
+    flex: 1; /* Make the input box flexible */
+    max-width: 300px; /* Prevent it from becoming too wide */
+    height: 50px;
     border: none;
     outline: none;
-    border-radius: 30px; /* Rounded edges for input */
-    padding: 0 15px; /* Horizontal padding */
+    border-radius: 40px;
+    padding: 0 25px; /* Adjust padding for consistent spacing */
     color: #626262;
-    background: #fff; /* Keeps it distinct inside the bar */
-    font-size: 16px;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional inner shadow */
+    background: #ebfffc;
+    font-size: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .search-bar input:focus {
-    transform: scale(1.02); /* Slight scaling on focus */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Focus shadow */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .search-bar img {
-    width: 40px;
-    height: 40px; /* Keeps it proportional */
+    width: 50px;
+    height: 50px; /* Maintain square size */
+    padding: 10px; /* Add inner padding */
     border-radius: 50%;
-    background: #fff; /* Distinct background for the icon */
+    background: #ebfffc;
     cursor: pointer;
     transition: transform 0.3s ease;
-    padding: 5px; /* Inner padding for the icon */
 }
 
 .search-bar img:hover {
-    transform: scale(1.1); /* Slight scaling on hover */
+    transform: scale(1.2);
 }
 
 
