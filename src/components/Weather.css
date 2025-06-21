@@ -22,40 +22,46 @@
 }
 
 .search-bar {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px; /* Adjust for spacing */
 }
 
 .search-bar input {
-  height: 50px;
-  border: none;
-  outline: none;
-  border-radius: 40px;
-  padding-left: 25px;
-  color: #626262;
-  background: #ebfffc;
-  font-size: 18px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1; /* Make the input box flexible */
+    max-width: 300px; /* Prevent it from becoming too wide */
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 0 25px; /* Adjust padding for consistent spacing */
+    color: #626262;
+    background: #ebfffc;
+    font-size: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .search-bar input:focus {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .search-bar img {
-  width: 50px;
-  padding: 15px;
-  border-radius: 50%;
-  background: #ebfffc;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+    width: 50px;
+    height: 50px; /* Maintain square size */
+    padding: 10px; /* Add inner padding */
+    border-radius: 50%;
+    background: #ebfffc;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .search-bar img:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
+
 
 .weather-icon {
   width: 150px;
