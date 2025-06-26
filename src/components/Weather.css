@@ -26,12 +26,12 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
-    margin-top: 20px; /* Adjust for spacing */
+    margin-top: 20px 5px; /* Adjust for spacing */
 }
 
 .search-bar input {
     flex: 1; /* Make the input box flexible */
-    max-width: 300px; /* Prevent it from becoming too wide */
+    max-width: 250px; /* Prevent it from becoming too wide */
     height: 50px;
     border: none;
     outline: none;
